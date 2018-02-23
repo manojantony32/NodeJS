@@ -11,13 +11,15 @@ var server = http.createServer(function(req, res){
     res.writeHead(200, {'Content-Type': 'application/json'});
     var newObj = {
       name: 'manoj',
-      age: '31',
-      job: 'Developer'
+      age: 31,
+      job: 'Developer',
+      location: 'chennai'
     };
     res.end(JSON.stringify(newObj));
   } else {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('404 OOPS');
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    var readStream = fs.createReadStream(__dirname + '/404.html', 'utf-8');
+    readStream.pipe(res);
   }
 });
 

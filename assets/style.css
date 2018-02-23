@@ -1,0 +1,11 @@
+body {
+  background: skyblue;
+  color:#fff;
+  font-family: verdana;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}

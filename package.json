@@ -1,0 +1,15 @@
+{
+  "name": "node-js-playlist",
+  "version": "1.0.0",
+  "description": "CORS Configuration\r To allow Cross Origin Request(Request from our Angular Frontend) add these lines beneath the Mongoose Connection code.\r The reason is the Frontend Application will be on http://localhost:4200, which is different origin from http://localhost:3000. That’s why the CORS policy of Browsers blocks these kinds of request. We need to allow these kinds of requests from the Backend’s preflight response.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
